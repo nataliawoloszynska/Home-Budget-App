@@ -87,20 +87,7 @@ body {
   border-radius: 5%;
 }
 
-.settings-btn {
-  box-sizing: border-box;
-  width: 200px;
-  padding: 10px;
-  align-self: center;
-  color: white;
-  background-color: #137547;
-  border-radius: 5%;
-  box-shadow: 0px 0px 2px 0px rgba(3, 3, 3, 1);
-  font-family: "Raleway";
-  font-size: 16px;
-  font-weight: 300;
-}
-
+.settings-btn,
 .save-btn {
   box-sizing: border-box;
   width: 200px;

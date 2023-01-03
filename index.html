@@ -34,21 +34,20 @@
                   type="text"
                   id="income-name-input"
                   class="input"
-                  maxlength="10"
                   placeholder="Nazwa przychodu"
                 />
                 <input
                   type="number"
                   id="income-amount-input"
                   class="input"
+                  min="0"
+                  oninput="this.value = Math.abs(this.value)"
                   placeholder="Kwota"
                 />
-                <input
-                  type="button"
-                  id="add-income-btn"
-                  class="settings-btn"
-                  value="Dodaj"
-                />
+                <button
+                id="add-income-btn"
+                class="settings-btn">Dodaj</button>
+              </button>
               </form>
             </div>
             <div id="income-list-container" class="list-container">
@@ -64,22 +63,20 @@
                   type="text"
                   id="expenses-name-input"
                   class="input"
-                  maxlength="10"
                   placeholder="Nazwa wydatku"
                 />
                 <input
                   type="number"
                   id="expenses-amount-input"
                   class="input"
-                  maxlength="7"
+                  min="0"
+                  oninput="this.value = Math.abs(this.value)"
                   placeholder="Kwota"
                 />
-                <input
-                  type="button"
+                <button
                   id="add-expenses-btn"
-                  class="settings-btn"
-                  value="Dodaj"
-                />
+                  class="settings-btn">Dodaj</button>
+                </button>
               </form>
             </div>
             <div id="expenses-list-container" class="list-container">
